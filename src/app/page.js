@@ -83,6 +83,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('hero');
   const [isScrolled, setIsScrolled] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -180,7 +181,7 @@ export default function Home() {
               </div>
             </a>
 
-            <div className="navbar-menu">
+            <div className="navbar-menu desktop-menu">
               {['About', 'Program', 'Gallery', 'Team', 'Partners', 'Contact'].map((item) => (
                 <button
                   key={item}
@@ -199,8 +200,49 @@ export default function Home() {
                 Apply Now
               </a>
             </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="mobile-menu-btn"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                {mobileMenuOpen ? (
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                ) : (
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                )}
+              </svg>
+            </button>
           </div>
         </div>
+
+        {/* Mobile Menu Dropdown */}
+        {mobileMenuOpen && (
+          <div className="mobile-menu-dropdown">
+            {['About', 'Program', 'Gallery', 'Team', 'Partners', 'Contact'].map((item) => (
+              <button
+                key={item}
+                onClick={() => {
+                  scrollToSection(item.toLowerCase());
+                  setMobileMenuOpen(false);
+                }}
+                className={`mobile-nav-link ${activeSection === item.toLowerCase() ? 'active' : ''}`}
+              >
+                {item}
+              </button>
+            ))}
+            <a
+              href="https://forms.gle/zpjus5KCirZuefcn9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary mobile-apply-btn"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Apply Now
+            </a>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
