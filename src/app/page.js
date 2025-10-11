@@ -497,16 +497,6 @@ export default function Home() {
           <div className="text-center">
             <div className="card" style={{ maxWidth: '500px', margin: '0 auto' }}>
               <h3 style={{ marginBottom: '1.5rem', color: 'var(--accent)' }}>Coming Soon</h3>
-              <p style={{ marginBottom: '1.5rem' }}>
-                We&apos;re preparing valuable resources including:
-              </p>
-              <ul style={{ textAlign: 'left', listStyle: 'none', padding: 0 }}>
-                <li style={{ marginBottom: '0.75rem' }}>• VC Fundamentals Guide</li>
-                <li style={{ marginBottom: '0.75rem' }}>• Startup Sourcing Playbook</li>
-                <li style={{ marginBottom: '0.75rem' }}>• Financial Modeling Templates</li>
-                <li style={{ marginBottom: '0.75rem' }}>• Interview Question Bank</li>
-                <li style={{ marginBottom: '0.75rem' }}>• Industry Reports & Insights</li>
-              </ul>
               <p style={{ marginTop: '1.5rem', color: 'var(--gray-medium)' }}>
                 Check back soon for updates!
               </p>
