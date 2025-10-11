@@ -133,7 +133,7 @@ export default function Home() {
     { name: "Yuta Chen", role: "Analyst", image: "/headshots/yuta-chen.jpg" },
     { name: "Piyush Patel", role: "Analyst", image: "/headshots/piyush-patel.jpg" },
     { name: "Prabhjit Singh", role: "Analyst", image: "/headshots/prabhjit-singh.jpg" },
-    { name: "Tanmay Thoray", role: "Analyst", image: "/headshots/tanmay-thorat.jpg" },
+    { name: "Tanmay Thorat", role: "Analyst", image: "/headshots/tanmay-thorat.jpg" },
   ];
 
   // Gallery data
