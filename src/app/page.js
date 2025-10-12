@@ -364,7 +364,7 @@ export default function Home() {
               Apply for Fall 2025 Cohort
             </a>
             <p style={{ marginTop: '1rem', color: 'var(--gray-medium)' }}>
-              Application deadline: February 15, 2025
+              Application deadline: September 19, 2025
             </p>
           </div>
         </div>
