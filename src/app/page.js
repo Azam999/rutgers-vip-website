@@ -392,9 +392,11 @@ export default function Home() {
                   <Image
                     src={founder.image}
                     alt={founder.name}
-                    width={220}
-                    height={220}
+                    width={440}
+                    height={440}
                     className="team-photo"
+                    quality={95}
+                    priority
                   />
                   <h4>{founder.name}</h4>
                   <p>{founder.role}</p>
@@ -412,9 +414,10 @@ export default function Home() {
                   <Image
                     src={analyst.image}
                     alt={analyst.name}
-                    width={200}
-                    height={200}
+                    width={400}
+                    height={400}
                     className="team-photo"
+                    quality={95}
                   />
                   <h4>{analyst.name}</h4>
                   <p>{analyst.role}</p>
