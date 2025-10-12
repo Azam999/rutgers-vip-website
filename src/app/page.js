@@ -361,7 +361,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              Apply for Spring 2025 Cohort
+              Apply for Fall 2025 Cohort
             </a>
             <p style={{ marginTop: '1rem', color: 'var(--gray-medium)' }}>
               Application deadline: February 15, 2025
