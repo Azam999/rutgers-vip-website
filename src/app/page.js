@@ -341,6 +341,18 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="hero" className="hero">
+        {/* Background Unicorn */}
+        <div className="hero-unicorn">
+          <Image
+            src="/unicorn.svg"
+            alt=""
+            width={600}
+            height={600}
+            className="unicorn-bg"
+            priority
+          />
+        </div>
+
         <div className="container">
           <div className="hero-content">
             <Image

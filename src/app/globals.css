@@ -352,6 +352,31 @@ a {
   animation: fadeInUp 0.8s ease 0.5s backwards;
 }
 
+/* Hero Unicorn Background */
+.hero-unicorn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.unicorn-bg {
+  width: 600px;
+  height: 600px;
+  object-fit: contain;
+}
+
+/* Large screens */
+@media (min-width: 1440px) {
+  .unicorn-bg {
+    width: 620px;
+    height: 620px;
+  }
+}
+
 /* Gallery Carousel styles */
 .gallery-carousel {
   position: relative;
@@ -990,6 +1015,15 @@ footer p {
     font-size: 0.9rem;
   }
 
+  .hero-unicorn {
+    opacity: 0.12;
+  }
+
+  .unicorn-bg {
+    width: 400px;
+    height: 400px;
+  }
+
   .info-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -1131,6 +1165,11 @@ footer p {
 
   .btn {
     max-width: none;
+  }
+
+  .unicorn-bg {
+    width: 300px;
+    height: 300px;
   }
 }
 
