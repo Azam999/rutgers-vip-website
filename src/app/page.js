@@ -800,7 +800,7 @@ export default function Home() {
                   <h4>20VC</h4>
                   <p className="resource-author">with Harry Stebbings</p>
                   <p className="resource-description">
-                    The world's largest independent venture podcast with leading VCs and founders
+                    The world&apos;s largest independent venture podcast with leading VCs and founders
                   </p>
                   <span className="resource-link">Watch on YouTube →</span>
                 </a>
@@ -839,7 +839,7 @@ export default function Home() {
                   <h4>Paul Graham Essays</h4>
                   <p className="resource-author">Y Combinator Library</p>
                   <p className="resource-description">
-                    Foundational essays on startups, growth, and venture capital from YC's co-founder
+                    Foundational essays on startups, growth, and venture capital from YC&apos;s co-founder
                   </p>
                   <span className="resource-link">Read Essays →</span>
                 </a>
@@ -857,7 +857,7 @@ export default function Home() {
               <div className="books-list">
                 <div className="book-item">
                   <div className="book-title">Pattern Breakers</div>
-                  <div className="book-subtitle">The secrets behind the world's most successful startups</div>
+                  <div className="book-subtitle">The secrets behind the world&apos;s most successful startups</div>
                 </div>
                 <div className="book-item">
                   <div className="book-title">Zero to One</div>
