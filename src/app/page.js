@@ -253,7 +253,6 @@ export default function Home() {
               />
               <div>
                 <div className="navbar-title">RUTGERS VIP</div>
-                <div className="navbar-subtitle">VENTURE INVESTOR PROGRAM</div>
               </div>
             </a>
 
@@ -264,6 +263,7 @@ export default function Home() {
                 "Gallery",
                 "Team",
                 "Partners",
+                "Resources",
                 "Contact",
               ].map((item) => (
                 <button
@@ -310,7 +310,7 @@ export default function Home() {
         {/* Mobile Menu Dropdown */}
         {mobileMenuOpen && (
           <div className="mobile-menu-dropdown">
-            {["About", "Program", "Gallery", "Team", "Partners", "Contact"].map(
+            {["About", "Program", "Gallery", "Team", "Partners", "Resources", "Contact"].map(
               (item) => (
                 <button
                   key={item}
@@ -767,17 +767,123 @@ export default function Home() {
         <div className="container">
           <h2 className="text-center">Resources</h2>
 
-          <div className="text-center">
-            <div
-              className="card"
-              style={{ maxWidth: "500px", margin: "0 auto" }}
-            >
-              <h3 style={{ marginBottom: "1.5rem", color: "var(--accent)" }}>
-                Coming Soon
+          <div className="resources-grid">
+            {/* Podcasts & Videos */}
+            <div className="resource-category">
+              <h3 className="resource-category-title">
+                <svg className="resource-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M10 8v8l6-4-6-4zm11.5 4c0 5.25-4.25 9.5-9.5 9.5S2.5 17.25 2.5 12 6.75 2.5 12 2.5s9.5 4.25 9.5 9.5zm-2 0c0-4.14-3.36-7.5-7.5-7.5S4.5 7.86 4.5 12s3.36 7.5 7.5 7.5 7.5-3.36 7.5-7.5z"/>
+                </svg>
+                Podcasts & Videos
               </h3>
-              <p style={{ marginTop: "1.5rem", color: "var(--gray-medium)" }}>
-                Check back soon for updates!
-              </p>
+              <div className="resource-cards">
+                <a
+                  href="https://www.youtube.com/@uncappedpod"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="resource-card"
+                >
+                  <h4>Uncapped</h4>
+                  <p className="resource-author">with Jack Altman</p>
+                  <p className="resource-description">
+                    Deep dives into venture capital and startups with top founders and investors
+                  </p>
+                  <span className="resource-link">Watch on YouTube →</span>
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@20VC"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="resource-card"
+                >
+                  <h4>20VC</h4>
+                  <p className="resource-author">with Harry Stebbings</p>
+                  <p className="resource-description">
+                    The world's largest independent venture podcast with leading VCs and founders
+                  </p>
+                  <span className="resource-link">Watch on YouTube →</span>
+                </a>
+
+                <a
+                  href="https://www.youtube.com/playlist?list=PLzQgStRQHwpOxsLuneDBS3LYSNu7Q3tQg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="resource-card"
+                >
+                  <h4>Startup/VC Playlist</h4>
+                  <p className="resource-author">Curated Collection</p>
+                  <p className="resource-description">
+                    Essential videos covering startup fundamentals, VC insights, and founder stories
+                  </p>
+                  <span className="resource-link">View Playlist →</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Essential Reading */}
+            <div className="resource-category">
+              <h3 className="resource-category-title">
+                <svg className="resource-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                </svg>
+                Essential Reading
+              </h3>
+              <div className="resource-cards">
+                <a
+                  href="https://www.ycombinator.com/library/carousel/Essays%20by%20Paul%20Graham"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="resource-card"
+                >
+                  <h4>Paul Graham Essays</h4>
+                  <p className="resource-author">Y Combinator Library</p>
+                  <p className="resource-description">
+                    Foundational essays on startups, growth, and venture capital from YC's co-founder
+                  </p>
+                  <span className="resource-link">Read Essays →</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Recommended Books */}
+            <div className="resource-category">
+              <h3 className="resource-category-title">
+                <svg className="resource-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"/>
+                </svg>
+                Recommended Books
+              </h3>
+              <div className="books-list">
+                <div className="book-item">
+                  <div className="book-title">Pattern Breakers</div>
+                  <div className="book-subtitle">The secrets behind the world's most successful startups</div>
+                </div>
+                <div className="book-item">
+                  <div className="book-title">Zero to One</div>
+                  <div className="book-subtitle">Notes on startups, or how to build the future</div>
+                </div>
+                <div className="book-item">
+                  <div className="book-title">The Unfair Advantage</div>
+                  <div className="book-subtitle">How you already have what it takes to succeed</div>
+                </div>
+                <div className="book-item">
+                  <div className="book-title">Secrets of Sand Hill Road</div>
+                  <div className="book-subtitle">Venture capital and how to get it</div>
+                </div>
+                <div className="book-item">
+                  <div className="book-title">The Mom Test</div>
+                  <div className="book-subtitle">How to talk to customers & learn if your business is a good idea</div>
+                </div>
+                <div className="book-item">
+                  <div className="book-title">Loonshots</div>
+                  <div className="book-subtitle">How to nurture the crazy ideas that win wars, cure diseases, and transform industries</div>
+                </div>
+                <div className="book-item">
+                  <div className="book-title">Hooked</div>
+                  <div className="book-subtitle">How to build habit-forming products</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

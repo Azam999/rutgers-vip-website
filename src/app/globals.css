@@ -151,6 +151,8 @@ a {
   font-family: 'Montserrat', sans-serif;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
+  min-width: fit-content;
 }
 
 .btn-primary {
@@ -256,8 +258,15 @@ a {
 
 .navbar-menu {
   display: flex;
-  gap: 2rem;
+  gap: 1.75rem;
   align-items: center;
+}
+
+.navbar-menu .btn {
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+  padding: 12px 28px;
+  font-size: 0.95rem;
 }
 
 .nav-link {
@@ -374,6 +383,30 @@ a {
   .unicorn-bg {
     width: 620px;
     height: 620px;
+  }
+
+  .navbar-menu {
+    gap: 2rem;
+  }
+
+  .navbar-menu .btn {
+    padding: 12px 32px;
+  }
+}
+
+/* Medium desktop screens */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .navbar-menu {
+    gap: 1.25rem;
+  }
+
+  .navbar-menu .btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
   }
 }
 
@@ -820,6 +853,154 @@ a {
   line-height: 1.7;
 }
 
+/* Resources Section */
+.resources-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.resource-category {
+  margin-bottom: 3.5rem;
+}
+
+.resource-category-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resource-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--accent);
+}
+
+.resource-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.resource-card {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.resource-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.resource-card:hover::before {
+  transform: scaleX(1);
+}
+
+.resource-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  text-decoration: none;
+}
+
+.resource-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--foreground);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.resource-author {
+  font-size: 0.95rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resource-description {
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray-dark);
+  margin-bottom: 1.5rem;
+}
+
+.resource-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resource-card:hover .resource-link {
+  text-decoration: underline;
+}
+
+/* Books List */
+.books-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.book-item {
+  background: white;
+  padding: 1.75rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.book-item:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.book-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.book-subtitle {
+  font-size: 0.95rem;
+  color: var(--gray-dark);
+  line-height: 1.5;
+  font-style: italic;
+}
+
 /* Footer */
 footer {
   background: var(--cream-light);
@@ -1140,6 +1321,45 @@ footer p {
   .contact-content p {
     font-size: 1.1rem;
     padding: 0 1rem;
+  }
+
+  /* Resources mobile styles */
+  .resource-category-title {
+    font-size: 1.4rem;
+    gap: 0.5rem;
+  }
+
+  .resource-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .resource-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-card {
+    padding: 1.5rem;
+  }
+
+  .resource-card h4 {
+    font-size: 1.25rem;
+  }
+
+  .books-list {
+    grid-template-columns: 1fr;
+  }
+
+  .book-item {
+    padding: 1.25rem;
+  }
+
+  .book-title {
+    font-size: 1.1rem;
+  }
+
+  .book-subtitle {
+    font-size: 0.9rem;
   }
 }
 
