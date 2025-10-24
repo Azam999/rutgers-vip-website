@@ -346,8 +346,8 @@ export default function Home() {
           <Image
             src="/unicorn.svg"
             alt=""
-            width={600}
-            height={600}
+            fill
+            sizes="(max-width: 768px) 80vw, (max-width: 1200px) 70vw, 60vw"
             className="unicorn-bg"
             priority
           />
@@ -581,7 +581,7 @@ export default function Home() {
           <div className="partners-grid">
             <div className="partner-logo">
               <Image
-                src="/partners/kp.jpg"
+                src="/partners/kp.png"
                 alt="Kleiner Perkins"
                 width={260}
                 height={140}

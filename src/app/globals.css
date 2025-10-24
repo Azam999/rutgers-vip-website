@@ -370,19 +370,22 @@ a {
   z-index: 1;
   opacity: 0.12;
   pointer-events: none;
+  width: 700px;
+  height: 700px;
 }
 
 .unicorn-bg {
-  width: min(600px, 60vh);
-  height: min(600px, 60vh);
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
   object-fit: contain;
 }
 
 /* Large screens */
 @media (min-width: 1440px) {
-  .unicorn-bg {
-    width: min(550px, 55vh);
-    height: min(550px, 55vh);
+  .hero-unicorn {
+    width: 650px;
+    height: 650px;
   }
 
   .navbar-menu {
@@ -1198,11 +1201,8 @@ footer p {
 
   .hero-unicorn {
     opacity: 0.12;
-  }
-
-  .unicorn-bg {
-    width: min(700px, 100vh);
-    height: min(700px, 100vh);
+    width: 600px;
+    height: 600px;
   }
 
   .info-grid {
@@ -1385,6 +1385,11 @@ footer p {
 
   .btn {
     max-width: none;
+  }
+
+  .hero-unicorn {
+    width: 500px;
+    height: 500px;
   }
 }
 
