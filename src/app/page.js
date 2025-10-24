@@ -466,7 +466,7 @@ export default function Home() {
             </div>
 
             <div className="program-card">
-              <div className="program-number">3</div>
+              <div className="program-number">4</div>
               <h4>VC Partners</h4>
               <p>
                 Work directly with top-tier venture capital firms throughout the

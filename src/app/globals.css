@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.03em;
@@ -71,7 +71,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(1.75rem, 4vw, 3.5rem);
   font-weight: 800;
   text-transform: uppercase;
   color: var(--accent);
@@ -322,8 +322,8 @@ a {
 }
 
 .hero-logo {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto 2rem;
   border-radius: 2rem;
   animation: fadeInUp 0.8s ease;
@@ -364,7 +364,7 @@ a {
 /* Hero Unicorn Background */
 .hero-unicorn {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -373,16 +373,16 @@ a {
 }
 
 .unicorn-bg {
-  width: 600px;
-  height: 600px;
+  width: min(600px, 60vh);
+  height: min(600px, 60vh);
   object-fit: contain;
 }
 
 /* Large screens */
 @media (min-width: 1440px) {
   .unicorn-bg {
-    width: 620px;
-    height: 620px;
+    width: min(550px, 55vh);
+    height: min(550px, 55vh);
   }
 
   .navbar-menu {
@@ -1201,8 +1201,8 @@ footer p {
   }
 
   .unicorn-bg {
-    width: 400px;
-    height: 400px;
+    width: min(700px, 100vh);
+    height: min(700px, 100vh);
   }
 
   .info-grid {
@@ -1385,11 +1385,6 @@ footer p {
 
   .btn {
     max-width: none;
-  }
-
-  .unicorn-bg {
-    width: 300px;
-    height: 300px;
   }
 }
 
