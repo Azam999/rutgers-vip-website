@@ -370,8 +370,8 @@ a {
   z-index: 1;
   opacity: 0.12;
   pointer-events: none;
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
 }
 
 .unicorn-bg {
@@ -384,8 +384,8 @@ a {
 /* Large screens */
 @media (min-width: 1440px) {
   .hero-unicorn {
-    width: 650px;
-    height: 650px;
+    width: 550px;
+    height: 550px;
   }
 
   .navbar-menu {
