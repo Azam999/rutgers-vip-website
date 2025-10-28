@@ -883,6 +883,10 @@ export default function Home() {
                   <div className="book-title">Hooked</div>
                   <div className="book-subtitle">How to build habit-forming products</div>
                 </div>
+                <div className="book-item">
+                  <div className="book-title">The Great American Drug Deal</div>
+                  <div className="book-subtitle">The untold truth about how America’s healthcare system rewards profit over patients—but fuels innovation.</div>
+                </div>
               </div>
             </div>
           </div>
