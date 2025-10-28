@@ -885,7 +885,7 @@ export default function Home() {
                 </div>
                 <div className="book-item">
                   <div className="book-title">The Great American Drug Deal</div>
-                  <div className="book-subtitle">The untold truth about how America’s healthcare system rewards profit over patients—but fuels innovation.</div>
+                  <div className="book-subtitle">How to navigate biotech startups, and learn about why medicine is so expensive for patients</div>
                 </div>
               </div>
             </div>
