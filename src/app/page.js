@@ -482,10 +482,10 @@ export default function Home() {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              Apply for Fall 2025 Cohort
+              Apply for Spring 2026 Cohort
             </a>
             <p style={{ marginTop: "1rem", color: "var(--gray-medium)" }}>
-              Application deadline: September 19, 2025
+              Application deadline: February 6, 2026
             </p>
           </div>
         </div>
@@ -948,7 +948,7 @@ export default function Home() {
       {/* Footer */}
       <footer>
         <div className="container">
-          <p>© 2025 Rutgers Venture Capital Club. All rights reserved.</p>
+          <p>© 2026 Rutgers Venture Capital Club. All rights reserved.</p>
           <p>Rutgers, The State University of New Jersey</p>
         </div>
       </footer>
