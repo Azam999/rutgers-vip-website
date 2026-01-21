@@ -277,7 +277,7 @@ export default function Home() {
                 </button>
               ))}
               <a
-                href="https://forms.gle/zpjus5KCirZuefcn9"
+                href="https://forms.gle/ghLjEA6eUqcafcUZ6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
@@ -327,7 +327,7 @@ export default function Home() {
               )
             )}
             <a
-              href="https://forms.gle/zpjus5KCirZuefcn9"
+              href="https://forms.gle/ghLjEA6eUqcafcUZ6"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary mobile-apply-btn"
@@ -371,7 +371,7 @@ export default function Home() {
             </p>
             <div className="hero-buttons">
               <a
-                href="https://forms.gle/zpjus5KCirZuefcn9"
+                href="https://forms.gle/ghLjEA6eUqcafcUZ6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
@@ -477,7 +477,7 @@ export default function Home() {
 
           <div className="text-center" style={{ marginTop: "3rem" }}>
             <a
-              href="https://forms.gle/zpjus5KCirZuefcn9"
+              href="https://forms.gle/ghLjEA6eUqcafcUZ6"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
