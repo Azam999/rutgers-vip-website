@@ -491,8 +491,133 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Partners Section */}
+      <section id="partners" className="section" >
+        <div className="container">
+          <h2 className="text-center">Our Partners</h2>
+          <p className="text-center" style={{ fontSize: "1.25rem", color: "var(--gray-medium)", marginBottom: "3rem", marginTop: "-1rem" }}>
+            Completed sourcing work for partners and associates at
+          </p>
+
+          <div className="partners-grid">
+            <div className="partner-logo">
+              <Image
+                src="/partners/kp.png"
+                alt="Kleiner Perkins"
+                width={260}
+                height={140}
+                className="object-contain"
+                style={{ width: "90%", height: "90%", objectFit: "contain" }}
+              />
+            </div>
+            <div className="partner-logo">
+              <Image
+                src="/partners/reach.jpg"
+                alt="Reach Capital"
+                width={260}
+                height={140}
+                className="object-contain"
+                style={{ width: "90%", height: "90%", objectFit: "contain" }}
+              />
+            </div>
+            <div className="partner-logo">
+              <Image
+                src="/partners/jj.jpg"
+                alt="Johnson & Johnson Ventures"
+                width={260}
+                height={140}
+                className="object-contain"
+                style={{ width: "90%", height: "90%", objectFit: "contain" }}
+              />
+            </div>
+            <div className="partner-logo">
+              <Image
+                src="/partners/a16z.png"
+                alt="Andreessen Horowitz"
+                width={260}
+                height={140}
+                className="object-contain"
+                style={{ width: "90%", height: "90%", objectFit: "contain" }}
+              />
+            </div>
+            <div className="partner-logo">
+              <Image
+                src="/partners/norwest.png"
+                alt="Norwest"
+                width={260}
+                height={140}
+                className="object-contain"
+                style={{ width: "90%", height: "90%", objectFit: "contain" }}
+              />
+            </div>
+            <div className="partner-logo">
+              <Image
+                src="/partners/base10.png"
+                alt="Base10"
+                width={260}
+                height={140}
+                className="object-contain"
+                style={{ width: "90%", height: "90%", objectFit: "contain" }}
+              />
+            </div>
+            <div className="partner-logo">
+              <Image
+                src="/partners/firstround.png"
+                alt="First Round"
+                width={260}
+                height={140}
+                className="object-contain"
+                style={{ width: "90%", height: "90%", objectFit: "contain" }}
+              />
+            </div>
+            <div className="partner-logo">
+              <Image
+                src="/partners/morgancreek.png"
+                alt="Morgan Creek Digital"
+                width={260}
+                height={140}
+                className="object-contain"
+                style={{ width: "90%", height: "90%", objectFit: "contain" }}
+              />
+            </div>
+            <div className="partner-logo">
+              <Image
+                src="/partners/nvpcapital.png"
+                alt="NVP Capital"
+                width={260}
+                height={140}
+                className="object-contain"
+                style={{ width: "90%", height: "90%", objectFit: "contain" }}
+              />
+            </div>
+            <div className="partner-logo">
+              <Image
+                src="/partners/azollaventures.png"
+                alt="Azolla Ventures"
+                width={260}
+                height={140}
+                className="object-contain"
+                style={{ width: "90%", height: "90%", objectFit: "contain" }}
+              />
+            </div>
+          </div>
+
+          <div className="text-center" style={{ marginTop: "3rem" }}>
+            <p style={{ fontSize: "1.25rem", marginBottom: "1.5rem" }}>
+              Interested in partnering with us?
+            </p>
+            <a
+              href="mailto:ruventurecc@gmail.com?subject=Partnership%20Inquiry%20-%20Rutgers%20VIP"
+              className="btn btn-outline"
+            >
+              Become a Partner
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* VIP Gallery Section */}
-      <section id="gallery" className="section">
+      <section id="gallery" className="section" style={{ backgroundColor: "white" }}>
         <div className="container">
           <h2 className="text-center">VIP in Action</h2>
           <Carousel images={vipGallery} height={520} />
@@ -569,68 +694,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section id="partners" className="section">
-        <div className="container">
-          <h2 className="text-center">Our Partners</h2>
-
-          <div className="partners-grid">
-            <div className="partner-logo">
-              <Image
-                src="/partners/kp.png"
-                alt="Kleiner Perkins"
-                width={260}
-                height={140}
-                className="object-contain"
-                style={{ width: "90%", height: "90%", objectFit: "contain" }}
-              />
-            </div>
-            <div className="partner-logo">
-              <Image
-                src="/partners/reach.jpg"
-                alt="Reach Capital"
-                width={260}
-                height={140}
-                className="object-contain"
-                style={{ width: "90%", height: "90%", objectFit: "contain" }}
-              />
-            </div>
-            <div className="partner-logo">
-              <Image
-                src="/partners/jj.jpg"
-                alt="Johnson & Johnson Ventures"
-                width={260}
-                height={140}
-                className="object-contain"
-                style={{ width: "90%", height: "90%", objectFit: "contain" }}
-              />
-            </div>
-            <div className="partner-logo">
-              <Image
-                src="/partners/a16z.png"
-                alt="Andreessen Horowitz"
-                width={260}
-                height={140}
-                className="object-contain"
-                style={{ width: "90%", height: "90%", objectFit: "contain" }}
-              />
-            </div>
-          </div>
-
-          <div className="text-center" style={{ marginTop: "3rem" }}>
-            <p style={{ fontSize: "1.25rem", marginBottom: "1.5rem" }}>
-              Interested in partnering with us?
-            </p>
-            <a
-              href="mailto:ruventurecc@gmail.com?subject=Partnership%20Inquiry%20-%20Rutgers%20VIP"
-              className="btn btn-outline"
-            >
-              Become a Partner
-            </a>
           </div>
         </div>
       </section>
@@ -842,6 +905,48 @@ export default function Home() {
                     Foundational essays on startups, growth, and venture capital from YC&apos;s co-founder
                   </p>
                   <span className="resource-link">Read Essays →</span>
+                </a>
+
+                <a
+                  href="https://outlierspath.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="resource-card"
+                >
+                  <h4>Outlier&apos;s Path</h4>
+                  <p className="resource-author">by Alfred Lin</p>
+                  <p className="resource-description">
+                    Company-building frameworks and principles from a Sequoia partner for founders navigating critical business moments
+                  </p>
+                  <span className="resource-link">Visit Site →</span>
+                </a>
+
+                <a
+                  href="https://dcahn.substack.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="resource-card"
+                >
+                  <h4>David Cahn&apos;s Newsletter</h4>
+                  <p className="resource-author">by David Cahn</p>
+                  <p className="resource-description">
+                    AI, technology, and startup trends from a Sequoia partner and author of &quot;AI&apos;s $600B Question&quot;
+                  </p>
+                  <span className="resource-link">Read Newsletter →</span>
+                </a>
+
+                <a
+                  href="https://www.productmarketfit.tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="resource-card"
+                >
+                  <h4>Product Market Fit</h4>
+                  <p className="resource-author">by Guillermo Flor</p>
+                  <p className="resource-description">
+                    Weekly insights on startup growth, fundraising, and achieving product-market fit, used by Notion, Stripe, and OpenAI
+                  </p>
+                  <span className="resource-link">Read Newsletter →</span>
                 </a>
               </div>
             </div>
