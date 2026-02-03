@@ -237,7 +237,6 @@ export default function Home() {
     "/club-gallery/IMG_8654.jpg",
     "/club-gallery/IMG_0765.jpg",
     "/club-gallery/IMG_0769.jpg",
-    "/club-gallery/IMG_0771.jpg",
     "/club-gallery/IMG_0772.jpg",
   ];
 
