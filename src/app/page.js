@@ -263,9 +263,9 @@ export default function Home() {
               {[
                 "About",
                 "Program",
+                "Partners",
                 "Gallery",
                 "Team",
-                "Partners",
                 "Resources",
                 "Contact",
               ].map((item) => (
