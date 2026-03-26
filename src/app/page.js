@@ -169,66 +169,73 @@ export default function Home() {
       name: "Armaan Mehta",
       role: "Analyst",
       image: "/headshots/armaan-mehta.jpg",
+      linkedin: "https://www.linkedin.com/in/armaan-mehta-14061b2b6/",
     },
     {
       name: "Esat Acikgoz",
       role: "Analyst",
       image: "/headshots/esat-acikgoz.jpg",
+      linkedin: "https://www.linkedin.com/in/esat-acikgoz-15b97727a/",
     },
     {
       name: "Nandini Chittor",
       role: "Analyst",
       image: "/headshots/nandini-chittor.jpg",
+      linkedin: "https://www.linkedin.com/in/nandini-chittor/",
     },
     {
       name: "Arnik Narang",
       role: "Analyst",
       image: "/headshots/arnik-narang.jpg",
+      linkedin: "https://www.linkedin.com/in/arniknarang/",
     },
     {
       name: "Pamela Shao",
       role: "Analyst",
       image: "/headshots/pamela-shao.jpg",
+      linkedin: "https://www.linkedin.com/in/pamela-shao-2847492a7/",
     },
     {
       name: "David Ji",
       role: "Analyst",
       image: "/headshots/david-ji.jpg",
-    },
-    {
-      name: "Arshleen Kaur",
-      role: "Analyst",
-      image: "/headshots/arshleen-kaur.jpg",
+      linkedin: "https://www.linkedin.com/in/david-ji-464470322/",
     },
     {
       name: "Youssef Mahmoud",
       role: "Analyst",
       image: "/headshots/youssef-mahmoud.jpg",
+      linkedin: "https://www.linkedin.com/in/youssef-mahmoud-0a1934385/",
     },
     {
       name: "Shakti Parmar",
       role: "Analyst",
       image: "/headshots/shakti-parmar.jpeg",
+      linkedin: "https://www.linkedin.com/in/shakti-parmar/",
     },
     {
       name: "Nidhi Reddy",
       role: "Analyst",
       image: "/headshots/nidhi-reddy.jpg",
+      linkedin: "https://www.linkedin.com/in/nidhi-reddy1029/",
     },
     {
       name: "Arsh Shah",
       role: "Analyst",
       image: "/headshots/arsh-shah.jpg",
+      linkedin: "https://www.linkedin.com/in/arsh-s-59361a251/",
     },
     {
       name: "Ryan George",
       role: "Analyst",
       image: "/headshots/ryan-george.jpg",
+      linkedin: "https://www.linkedin.com/in/ryan-george1228/",
     },
     {
       name: "Neev Mohindroo",
       role: "Analyst",
       image: "/headshots/neev-mohindroo.jpg",
+      linkedin: "https://www.linkedin.com/in/neev-mohindroo-2021a4282/",
     },
   ];
 
@@ -288,11 +295,13 @@ export default function Home() {
       name: "Yusuf Sallam",
       role: "Advisor",
       image: "/headshots/yusuf-sallam.jpg",
+      linkedin: "https://www.linkedin.com/in/yusuf-sallam/",
     },
     {
       name: "Kaustubh Baskaran",
       role: "Advisor",
       image: "/headshots/kaustubh-baskaran.jpg",
+      linkedin: "https://www.linkedin.com/in/kaustubh-baskaran/",
     },
   ];
 
@@ -681,6 +690,16 @@ export default function Home() {
               <Image
                 src="/partners/azollaventures.png"
                 alt="Azolla Ventures"
+                width={260}
+                height={140}
+                className="object-contain"
+                style={{ width: "90%", height: "90%", objectFit: "contain" }}
+              />
+            </div>
+            <div className="partner-logo">
+              <Image
+                src="/partners/rbv.jpeg"
+                alt="Red Beard Ventures"
                 width={260}
                 height={140}
                 className="object-contain"

@@ -667,10 +667,10 @@ a {
 /* Partners grid */
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   margin: 3rem 0;
-  max-width: 800px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
