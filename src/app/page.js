@@ -137,78 +137,162 @@ export default function Home() {
     },
   ];
 
-  const analysts = [
-    {
-      name: "Azam Ahmed",
-      role: "Analyst",
-      image: "/headshots/azam-ahmed.jpg",
-      linkedin: "https://www.linkedin.com/in/azam-ahmed/",
-    },
-    {
-      name: "Abdullah Mehmood",
-      role: "Analyst",
-      image: "/headshots/abdullah-mehmood.jpg",
-      linkedin: "https://www.linkedin.com/in/abdullah-mehmood-khichi/",
-    },
+  const associates = [
     {
       name: "Julia Lee",
-      role: "Analyst",
+      role: "Associate",
       image: "/headshots/julia-lee.jpg",
       linkedin: "https://www.linkedin.com/in/aa987235b/",
     },
     {
-      name: "Abhinav Reddy",
-      role: "Analyst",
-      image: "/headshots/abhinav-reddy.jpg",
-      linkedin: "https://www.linkedin.com/in/abhi-reddy-/",
-    },
-    {
       name: "Atula Ravi",
-      role: "Analyst",
+      role: "Associate",
       image: "/headshots/atula-ravi.jpg",
       linkedin: "https://www.linkedin.com/in/atula-ravi-447627306/",
     },
     {
-      name: "Krishv Chivukula",
-      role: "Analyst",
-      image: "/headshots/krishv-chivukula.jpg",
-      linkedin: "https://www.linkedin.com/in/krishv-chivukula/",
-    },
-    {
-      name: "Michael Breibart",
-      role: "Analyst",
-      image: "/headshots/michael-breibart.jpg",
-      linkedin: "https://www.linkedin.com/in/michael-breibart-7a4988343/",
-    },
-    {
       name: "Mohammad Saqib",
-      role: "Analyst",
+      role: "Associate",
       image: "/headshots/mohammad-saqib.jpg",
       linkedin: "https://www.linkedin.com/in/mohammad-najmus-saqib-974aba382/",
     },
     {
       name: "Yuta Chen",
-      role: "Analyst",
+      role: "Associate",
       image: "/headshots/yuta-chen.jpg",
       linkedin: "https://www.linkedin.com/in/kaceyyuta-chen/",
     },
+  ];
+
+  const analysts = [
     {
-      name: "Piyush Patel",
+      name: "Armaan Mehta",
       role: "Analyst",
-      image: "/headshots/piyush-patel.jpg",
-      linkedin: "https://www.linkedin.com/in/piyushpatel17/",
+      image: "/headshots/armaan-mehta.jpg",
+    },
+    {
+      name: "Esat Acikgoz",
+      role: "Analyst",
+      image: "/headshots/esat-acikgoz.jpg",
+    },
+    {
+      name: "Nandini Chittor",
+      role: "Analyst",
+      image: "/headshots/nandini-chittor.jpg",
+    },
+    {
+      name: "Arnik Narang",
+      role: "Analyst",
+      image: "/headshots/arnik-narang.jpg",
+    },
+    {
+      name: "Pamela Shao",
+      role: "Analyst",
+      image: "/headshots/pamela-shao.jpg",
+    },
+    {
+      name: "David Ji",
+      role: "Analyst",
+      image: "/headshots/david-ji.jpg",
+    },
+    {
+      name: "Arshleen Kaur",
+      role: "Analyst",
+      image: "/headshots/arshleen-kaur.jpg",
+    },
+    {
+      name: "Youssef Mahmoud",
+      role: "Analyst",
+      image: "/headshots/youssef-mahmoud.jpg",
+    },
+    {
+      name: "Shakti Parmar",
+      role: "Analyst",
+      image: "/headshots/shakti-parmar.jpeg",
+    },
+    {
+      name: "Nidhi Reddy",
+      role: "Analyst",
+      image: "/headshots/nidhi-reddy.jpg",
+    },
+    {
+      name: "Arsh Shah",
+      role: "Analyst",
+      image: "/headshots/arsh-shah.jpg",
+    },
+    {
+      name: "Ryan George",
+      role: "Analyst",
+      image: "/headshots/ryan-george.jpg",
+    },
+    {
+      name: "Neev Mohindroo",
+      role: "Analyst",
+      image: "/headshots/neev-mohindroo.jpg",
+    },
+  ];
+
+  const formerAnalysts = [
+    {
+      name: "Azam Ahmed",
+      role: "Former Analyst",
+      image: "/headshots/azam-ahmed.jpg",
+      linkedin: "https://www.linkedin.com/in/azam-ahmed/",
+    },
+    {
+      name: "Michael Breibart",
+      role: "Former Analyst",
+      image: "/headshots/michael-breibart.jpg",
+      linkedin: "https://www.linkedin.com/in/michael-breibart-7a4988343/",
     },
     {
       name: "Prabhjit Singh",
-      role: "Analyst",
+      role: "Former Analyst",
       image: "/headshots/prabhjit-singh.jpg",
       linkedin: "https://www.linkedin.com/in/prabhjit-singh-14297b319/",
     },
     {
       name: "Tanmay Thorat",
-      role: "Analyst",
+      role: "Former Analyst",
       image: "/headshots/tanmay-thorat.jpg",
       linkedin: "https://www.linkedin.com/in/tanmay-thorat-3b15041a7/",
+    },
+    {
+      name: "Piyush Patel",
+      role: "Former Analyst",
+      image: "/headshots/piyush-patel.jpg",
+      linkedin: "https://www.linkedin.com/in/piyushpatel17/",
+    },
+    {
+      name: "Abhinav Reddy",
+      role: "Former Analyst",
+      image: "/headshots/abhinav-reddy.jpg",
+      linkedin: "https://www.linkedin.com/in/abhi-reddy-/",
+    },
+    {
+      name: "Krishv Chivukula",
+      role: "Former Analyst",
+      image: "/headshots/krishv-chivukula.jpg",
+      linkedin: "https://www.linkedin.com/in/krishv-chivukula/",
+    },
+    {
+      name: "Abdullah Mehmood",
+      role: "Former Analyst",
+      image: "/headshots/abdullah-mehmood.jpg",
+      linkedin: "https://www.linkedin.com/in/abdullah-mehmood-khichi/",
+    },
+  ];
+
+  const advisors = [
+    {
+      name: "Yusuf Sallam",
+      role: "Advisor",
+      image: "/headshots/yusuf-sallam.jpg",
+    },
+    {
+      name: "Kaustubh Baskaran",
+      role: "Advisor",
+      image: "/headshots/kaustubh-baskaran.jpg",
     },
   ];
 
@@ -666,8 +750,51 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Associates */}
+          <div style={{ marginBottom: "4rem" }}>
+            <h3
+              className="text-center text-accent"
+              style={{ marginBottom: "3rem" }}
+            >
+              Associates
+            </h3>
+            <div className="team-grid">
+              {associates.map((member) => (
+                <div key={member.name} className="team-member">
+                  {member.linkedin ? (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ cursor: "pointer" }}
+                    >
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={400}
+                        height={400}
+                        className="team-photo"
+                        quality={95}
+                      />
+                    </a>
+                  ) : (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={400}
+                      height={400}
+                      className="team-photo"
+                      quality={95}
+                    />
+                  )}
+                  <h4>{member.name}</h4>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Analysts */}
-          <div>
+          <div style={{ marginBottom: "4rem" }}>
             <h3
               className="text-center text-accent"
               style={{ marginBottom: "3rem" }}
@@ -675,25 +802,121 @@ export default function Home() {
               Analysts
             </h3>
             <div className="team-grid">
-              {analysts.map((analyst) => (
-                <div key={analyst.name} className="team-member">
-                  <a
-                    href={analyst.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ cursor: "pointer" }}
-                  >
+              {analysts.map((member) => (
+                <div key={member.name} className="team-member">
+                  {member.linkedin ? (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ cursor: "pointer" }}
+                    >
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={400}
+                        height={400}
+                        className="team-photo"
+                        quality={95}
+                      />
+                    </a>
+                  ) : (
                     <Image
-                      src={analyst.image}
-                      alt={analyst.name}
+                      src={member.image}
+                      alt={member.name}
                       width={400}
                       height={400}
                       className="team-photo"
                       quality={95}
                     />
-                  </a>
-                  <h4>{analyst.name}</h4>
-                  <p>{analyst.role}</p>
+                  )}
+                  <h4>{member.name}</h4>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Former Analysts */}
+          <div style={{ marginBottom: "4rem" }}>
+            <h3
+              className="text-center text-accent"
+              style={{ marginBottom: "3rem" }}
+            >
+              Former Analysts
+            </h3>
+            <div className="team-grid">
+              {formerAnalysts.map((member) => (
+                <div key={member.name} className="team-member">
+                  {member.linkedin ? (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ cursor: "pointer" }}
+                    >
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={400}
+                        height={400}
+                        className="team-photo"
+                        quality={95}
+                      />
+                    </a>
+                  ) : (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={400}
+                      height={400}
+                      className="team-photo"
+                      quality={95}
+                    />
+                  )}
+                  <h4>{member.name}</h4>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Advisors */}
+          <div>
+            <h3
+              className="text-center text-accent"
+              style={{ marginBottom: "3rem" }}
+            >
+              Advisors
+            </h3>
+            <div className="team-grid">
+              {advisors.map((member) => (
+                <div key={member.name} className="team-member">
+                  {member.linkedin ? (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ cursor: "pointer" }}
+                    >
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={400}
+                        height={400}
+                        className="team-photo"
+                        quality={95}
+                      />
+                    </a>
+                  ) : (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={400}
+                      height={400}
+                      className="team-photo"
+                      quality={95}
+                    />
+                  )}
+                  <h4>{member.name}</h4>
                 </div>
               ))}
             </div>
